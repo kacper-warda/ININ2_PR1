@@ -40,5 +40,22 @@ public class Main {
 
         System.out.println(me.pet.name);
 
+        Car fiat = new Car();
+        fiat.value = 120000.0;
+        fiat.model = "bravo";
+
+        me.setSalary(2000.0);
+        me.setCar(fiat);
+        if (me.getCar() != null) {
+            System.out.println(me.getCar().model);
+        } else {
+            System.out.println("sorry, nie masz auta");
+        }
+
+        try {
+            System.out.println(me.getCar().model);
+        } catch (Exception e) {
+            System.out.println("sorry, ale nie masz samochodu");
+        }
     }
 }

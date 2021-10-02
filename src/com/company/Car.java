@@ -5,4 +5,5 @@ public class Car {
     String model;
     Double millage;
     Double engineSize;
+    Double value;
 }
